@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 32vmin;
   pointer-events: none;
 }
 
@@ -12,22 +12,68 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
 .App-header {
-  background-color: #282c34;
+  background-color: black;
+  background-image: url("background.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  color: grey;
+}
+
+.Teams {
+  border: 2px solid #61dafb;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.Team {
+  width: 200px;
+  border: 2px solid #61dafb;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 5px;
+  transition: 0.5s;
+}
+.Team:hover {
+  padding: 10px;
+  transition: 0.5s;
+  box-shadow: 0 0 50px 5px #004153;
+}
+.red {
+  color: rgb(255, 0, 0);
+}
+.blue {
+  color: blue;
+}
+button {
+  border: 2px solid #61dafb;
+  border-radius: 30px;
+  background-color: black;
+  color: grey;
+  font-weight: 600;
+  font-size: 20px;
+  margin: 10px;
+  transition: 0.5s;
+}
+button:hover {
+  padding: 10px;
+  box-shadow: 0 0 10px 1px #004153;
+  transition: 0.5s;
+}
+.game {
+  color: lime;
+}
+::selection {
+  background-color: lime;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
